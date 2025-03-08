@@ -1,0 +1,158 @@
+/* Sidebar Styles */
+.sidebar {
+  color: white;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  padding-top: 20px;
+  left: -250px; /* Initially off-screen */
+  background-color: #333;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: left 0.4s ease, transform 0.4s ease-in-out; /* Smooth slide-in/out effect */
+}
+
+/* Sidebar when it's active (shown) */
+.sidebar.open {
+  left: 0; /* Sidebar slides in */
+  transform: translateX(0); /* Adds a smooth effect */
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #646cff;
+}
+
+/* Content Styles */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.4s ease; /* Smooth content transition when sidebar opens/closes */
+}
+
+/* Vertical Line */
+.vl {
+  border-left: 3px solid rgb(74, 73, 73);
+  height: 700px;
+  position: absolute;
+  left: 106%;
+  top: 0;
+  transition: opacity 0.3s ease; /* Fade effect for vertical line */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0; /* Sidebar takes full width on smaller screens */
+    transition: none; /* No slide effect for small screens */
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .vl {
+    display: none;
+  }
+}
+
+/* Button to toggle sidebar */
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 220px; /* Position the toggle button outside the sidebar */
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #555;
+}
+
+/* Keyframes for slide-in effect for the sidebar */
+@keyframes slideIn {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* Keyframes for sliding the content when the sidebar is toggled */
+@keyframes slideContent {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 250px;
+  }
+}
+
+/* Smooth transition effect for switching between light and dark modes */
+@keyframes lightDarkMode {
+  0% {
+    background-color: #242424;
+    color: rgba(255, 255, 255, 0.87);
+  }
+  100% {
+    background-color: #ffffff;
+    color: #213547;
+  }
+}
+
+/* Light/Dark Mode Switching */
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #ffffff;
+    color: #213547;
+  }
+
+  .sidebar {
+    background-color: #f5f5f5;
+  }
+
+  .sidebar a:hover {
+    color: #747bff;
+  }
+
+  .toggle-btn {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .toggle-btn:hover {
+    background-color: #e0e0e0;
+  }
+
+  .content {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+}

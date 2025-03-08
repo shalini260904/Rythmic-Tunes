@@ -1,0 +1,85 @@
+/* Home Section */
+#uhome {
+    height: 700px;
+    background-image: url("https://furniture-shop-site.netlify.app/static/media/defaultBcg.9a1103b5.jpeg");
+    background-size: cover; /* Ensures background image covers the entire div */
+    background-position: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    animation: fadeIn 1.5s ease-out; /* Fade-in animation for the home section */
+  }
+  
+  /* HH Section */
+  #hh {
+    margin-top: 200px;
+    margin-left: 480px;
+    margin-right: 480px;
+    background-color: #45444492;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards; /* Slide-in animation for the HH section */
+  }
+  
+  /* Button Styles */
+  #bt {
+    height: 60px;
+    width: 170px;
+    background-color: rgb(167, 149, 125);
+    border: none;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: buttonFadeIn 1s ease-out 1s forwards; /* Fade-in animation for the button */
+  }
+  
+  #bt:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Fade-In Animation for Home Section */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-In Animation for HH Section */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Starts slightly below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Ends at normal position */
+    }
+  }
+  
+  /* Fade-In Animation for Button */
+  @keyframes buttonFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    #hh {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 100px;
+    }
+  }
+  
