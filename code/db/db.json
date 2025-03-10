@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Hey Minnale",
+      "singer": "",
+      "genre": "Romantic",
+      "imgUrl": "https://i.ytimg.com/vi/8ekaICu_9V0/maxresdefault.jpg",
+      "songUrl": "Songs/Hey Minnale - Masstamilan.mp3"
+    },
+    {
+      "id": 2,
+      "title": "Vennilavu Saaral",
+      "singer": "",
+      "genre": "Romantic",
+      "imgUrl": "https://i.ytimg.com/vi/INeaHdzCoh8/maxresdefault.jpg",
+      "songUrl": "Songs/Vennilavu Saaral - Masstamilan.mp3"
+    },
+    {
+      "id": 3,
+      "title": "En Aayul Regai Neeyadi",
+      "singer": "",
+      "genre": "Romantic",
+      "imgUrl": "https://tamillyrics143.com/wp-content/uploads/2019/01/Pirai-Thedum-Song-Lyrics-From-Mayakkam-Enna.jpg",
+      "songUrl": "Songs/En Aayul Regai Neeyadi - Masstamilan.mp3"
+    },
+    {
+      "id": 4,
+      "title": "Kannukulle Unnai Vaithen Kannamma",
+      "singer": "",
+      "genre": "Emotional",
+      "imgUrl": "https://tamillyrics143.com/wp-content/uploads/2018/11/Kannukulle-Unnai-Vaithen-Kannamma-Song-Lyrics-768x424.jpg",
+      "songUrl": "Songs/Kannukulle Unnai Vaithen Kannamma - Masstamilan.mp3"
+    },
+    {
+      "id": 5,
+      "title": "Meghame O Meghame",
+      "singer": "",
+      "genre": "Emotional",
+      "imgUrl": "https://i.ytimg.com/vi/9LonkERdj-s/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgZShlMA8=&rs=AOn4CLAg_RZPnRLC22opGu4mjHjbETuq2Q",
+      "songUrl": "Songs/Meghame O Meghame - Masstamilan.mp3"
+    }
+  
+  ],
+  "favorities": [ ]
+}

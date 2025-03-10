@@ -1,0 +1,25 @@
+/* Resetting padding and margin for all elements */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Body styles */
+body {
+  background: rgb(103, 58, 180);
+  background: linear-gradient(90deg, rgba(103, 58, 180, 1) 0%, rgba(29, 195, 253, 1) 54%, rgba(103, 58, 180, 1) 100%);
+  animation: gradientAnimation 5s ease-in-out infinite; /* Animation for background gradient */
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(90deg, rgba(103, 58, 180, 1) 0%, rgba(29, 195, 253, 1) 54%, rgba(103, 58, 180, 1) 100%);
+  }
+  50% {
+    background: linear-gradient(90deg, rgba(29, 195, 253, 1) 0%, rgba(103, 58, 180, 1) 54%, rgba(29, 195, 253, 1) 100%);
+  }
+  100% {
+    background: linear-gradient(90deg, rgba(103, 58, 180, 1) 0%, rgba(29, 195, 253, 1) 54%, rgba(103, 58, 180, 1) 100%);
+  }
+}
